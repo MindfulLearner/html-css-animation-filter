@@ -1,0 +1,128 @@
+/* Esercizio 1 */
+.ex-1-square {
+    transition: 2s;
+}
+
+.ex-1-square:hover {
+    background-color: aquamarine;
+}
+
+/* Esercizio 2, il delay bisogna metterlo su cio che serve!*/
+.ex-2-square {
+    transition: background-color 1s ease-in, width 1s ease-in-out 2s;
+}
+
+.ex-2-square:active {
+    width: 100%;
+    background-color: blue;
+    
+}
+
+/* Esercizio 3 */
+.ex-3-square {
+    transition: 2s;
+}
+
+.ex-3-square:hover {
+    border-radius: 100%;
+    background-color: aquamarine;
+}
+
+/* Esercizio 4 */
+.ex-4-square {
+    transition: 1s;
+}
+
+.ex-4-square:hover {
+    opacity: 0;
+}
+
+/* Esercizio 5 */
+.ex-5-square {
+    transition: 1s;
+}
+
+.ex-5-square:hover {
+    width: 100px;
+    height: 100px;
+    background: rgb(150, 251, 106);
+}
+
+.ex-5-square:active {
+    width: 2px;
+    height: 2px;
+}
+
+/* Esercizio 6 */
+.ex-6-img {
+    transition: 1s;
+}
+
+.ex-6-img:hover { 
+    filter: grayscale(20)
+}
+
+/* Esercizio 7 */
+.ex-7-img {
+     transition: filter 1s linear, width 1s ;
+}
+
+.ex-7-img:hover {
+    filter: grayscale(20); 
+    width: 2px;
+}
+
+/* Esercizio 8 */
+.ex-8-img {
+    transition: 1s;
+}
+
+.ex-8-img:hover {
+    filter: grayscale(.5) sepia(.3);
+    border-radius: 100%;
+}
+
+/* Esercizio 9 */
+.ex-9-img {
+    transition: 1s;
+}
+
+.ex-9-img:hover {
+    filter: grayscale(.3) sepia(.2);
+    border-radius: 60px;
+    transform: scale(2);
+}
+
+/* Esercizio 10 */
+.ex-10-icon {
+    animation: gira 1s linear infinite;
+}
+
+@keyframes gira {
+    0% {
+        transform: rotate(100turn);
+    }
+}
+
+/* Esercizio 11 */
+.ex-11-icon {
+    animation: giragira 2s linear;
+}
+
+@keyframes giragira {
+    0% {
+        transform: rotate(0);
+    }
+    90% {
+        transform: rotate(320deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+/* Esercizio 12 */
+.ex-12-button:hover .ex-12-top-white {
+    animation: girabianco 2s linear;
+}
+
